@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Opportunities Engine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .header h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        .engagement-summary, .next-best-opportunities, .performance {
+            padding: 20px 0;
+        }
+        .summary-grid, .opportunities-grid, .performance-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .summary-box, .opportunity-box, .performance-box {
+            flex: 1 1 calc(25% - 20px);
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .opportunity-box {
+            flex: 1 1 calc(33% - 20px);
+        }
+        .performance-box {
+            flex: 1 1 calc(20% - 20px);
+        }
+        .summary-box p, .opportunity-box p, .performance-box p {
+            margin: 10px 0;
+            color: #444;
+        }
+        .summary-box p:first-child {
+            font-weight: bold;
+            color: #0073e6;
+        }
+        .action-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        .action-button:hover {
+            background-color: #005bb5;
+        }
+        .integrations {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .integrations button {
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            border: none;
+            color: #fff;
+            background-color: #0073e6;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .integrations button:hover {
+            background-color: #005bb5;
+        }
+        .performance-box {
+            padding: 15px;
+        }
+        .performance-box a {
+            margin-top: 10px;
+            display: block;
+        }
+        .summary-box {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Opportunities Engine</h1>
+            <div class="integrations">
+                <button>Integrations</button>
+                <button>Download My Opportunities</button>
+            </div>
+        </div>
+        
+        <div class="engagement-summary">
+            <h2>Engagement Summary</h2>
+            <div class="summary-grid">
+                <div class="summary-box">
+                    <p>Engagement Score</p>
+                    <p>47%</p>
+                </div>
+                <div class="summary-box">
+                    <p>Total Active Users</p>
+                    <p>726,145</p>
+                </div>
+                <div class="summary-box">
+                    <p>New Active Users</p>
+                    <p>17,392</p>
+                </div>
+                <div class="summary-box">
+                    <p>Total Impressions</p>
+                    <p>126,145</p>
+                </div>
+                <div class="summary-box">
+                    <p>Total Clicks</p>
+                    <p>23,928</p>
+                </div>
+                <div class="summary-box">
+                    <p>CTR</p>
+                    <p>5.3%</p>
+                </div>
+                <div class="summary-box">
+                    <p>Push Engagement</p>
+                    <p>78%</p>
+                </div>
+                <div class="summary-box">
+                    <p>Geofence Engagement</p>
+                    <p>50%</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="next-best-opportunities">
+            <h2>Next-Best Opportunities</h2>
+            <div class="opportunities-grid">
+                <div class="opportunity-box">
+                    <p>Top-3 Opportunities</p>
+                    <p>CD is Maturing</p>
+                    <p>$300k Expiring in 3 months</p>
+                    <a href="#" class="action-button">Start Campaign</a>
+                </div>
+                <div class="opportunity-box">
+                    <p>Missing Payment</p>
+                    <p>Audience Size: 58,916</p>
+                    <a href="#" class="action-button">Start Campaign</a>
+                </div>
+                <div class="opportunity-box">
+                    <p>Auto Loan Opportunity</p>
+                    <p>$3.5M in Fees</p>
+                    <a href="#" class="action-button">Start Campaign</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="performance">
+            <h2>Performance</h2>
+            <div class="performance-grid">
+                <div class="performance-box">
+                    <p>Top Campaigns</p>
+                    <p>CD is Maturing</p>
+                    <p>Push + FeedPost</p>
+                    <p>1,820 Opportunities</p>
+                    <a href="#" class="action-button">Opportunities File</a>
+                </div>
+                <div class="performance-box">
+                    <p>Pre Summer Auto Loans</p>
+                    <p>Push + FeedPost</p>
+                    <p>1,644 Opportunities</p>
+                    <a href="#" class="action-button">Missed Opportunities</a>
+                </div>
+                <div class="performance-box">
+                    <p>Gold Credit Card</p>
+                    <p>In-App + FeedPost</p>
+                    <p>1,381 Opportunities</p>
+                    <a href="#" class="action-button">All Opportunities</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
